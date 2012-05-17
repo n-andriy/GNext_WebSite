@@ -97,16 +97,16 @@ img.displayed {
 				#MainMenu li.portfolio a.selected{background-position: 0px -280px;}
 			
 			/* Кнопка Контакты */
-			#MainMenu li.contact{width: 121px; height: 131px;}
-				#MainMenu li.contact a{background-position: -139px 0px;}
-				#MainMenu li.contact a:hover{background-position: -139px -140px;}
-				#MainMenu li.contact a.selected{background-position: -139px -280px;}
+			#MainMenu li.services{width: 121px; height: 131px;}
+				#MainMenu li.services a{background-position: -139px 0px;}
+				#MainMenu li.services a:hover{background-position: -139px -140px;}
+				#MainMenu li.services a.selected{background-position: -139px -280px;}
 				
 			/* Кнопка Услуги */
-			#MainMenu li.services{width: 106px; height: 126px;}
-				#MainMenu li.services a{background-position: -260px 0px;}
-				#MainMenu li.services a:hover{background-position: -260px -140px;}
-				#MainMenu li.services a.selected{background-position: -260px -280px;}
+			#MainMenu li.contact{width: 106px; height: 126px;}
+				#MainMenu li.contact a{background-position: -260px 0px;}
+				#MainMenu li.contact a:hover{background-position: -260px -140px;}
+				#MainMenu li.contact a.selected{background-position: -260px -280px;}
 			
 			/* Кнопка Главная */
 			#MainMenu li.main{width: 76px; height: 114px;}
