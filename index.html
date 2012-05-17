@@ -14,11 +14,28 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+	<script type="text/javascript" src="scripts/jquery1.7.2.js"></script>
+	<script type="text/javascript" src="scripts/slides.js"></script>
+	
+	<script>
+		$(function(){
+			$("#slides").slides();
+		});
+	</script>
+	
 </head>
 
 <body>
 
 <!-- Снова добавлюя коооммент. -->
+
+<!-- Общий блок -->
+
+<div id="wrapper">
+
+<!-- Шапка -->
+
+<div id="header">
 
 <a href="index.html" title="На главную">
 <div class="logo-main-menu" style="position: absolute; left: 50%; top: 3%; margin-left: -450px;"></div>
@@ -37,11 +54,26 @@
 		</ul>
 </div>
 
+</div>
+
+<!-- Контент -->
+
+<div id="content">
+
+</div>
+
+<!-- Подвал -->
+<div id="footer">
+
 <div class="MenuFooter" style="position:absolute; left:50%; bottom: 2%; margin-left: -370px;">
 <a href="index.html" class="MenuFooter">главная</a> | <a href="portfolio.html" class="MenuFooter">портфолио</a> | <a href="services.html" class="MenuFooter">услуги</a> | <a href="contact.html" class="MenuFooter">контакты</a></div>
 
 <div class="copyrights" style="position:absolute; left:50%; bottom:2%; margin-left: 70px;">
 &copy; Web Studio G-next 2012. All rights reserved.
+</div>
+
+</div>
+
 </div>
 
 </body>
