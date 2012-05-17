@@ -1,4 +1,4 @@
-* {
+п»ї* {
 	margin: 0;
 	padding: 0;
 }
@@ -120,3 +120,97 @@ img.displayed {
 				#MainMenu li.localization a:hover{background-position: -442px -140px;}
 				
 /* CSS Спрайт Меню - Конец*/
+
+
+/* Р“Р°Р»РµСЂРµСЏ */
+
+#frame {
+	position:absolute;
+	/*z-index:0;*/
+	width:514px;
+	height:386px;
+	padding-top:200px;
+	padding-left:235px;
+	/*top:-3px;*/
+	/*left:-80px;*/
+}
+
+.slides_container {
+	width:490px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	padding-top:202px;
+	padding-left:243px;
+}
+
+.slides_container a {
+	width:490px;
+	height:353px;
+	display:block;
+}
+
+.slides_container a img {
+	display:block;
+}
+
+
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
+}
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	/*z-index:100;*/
+}
+
+.pagination {
+	/*margin:6px auto 0;*/
+	width:100px;
+	margin-left:691px;
+	margin-top:25px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/gallery/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+#slides .next,#slides .prev {
+	position:absolute;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:760px;
+	top:350px;
+}
+
+#slides .prev {
+	left:222px;
+	top:350px;
+}
+

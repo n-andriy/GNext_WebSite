@@ -67,7 +67,7 @@
 							// set position of next slide to right of previous
 							position = width*2;
 							// distance to slide based on width of slides
-							direction = -width*2;
+							direction = -width*1.8;
 							// store new current slide
 							current = next;
 						break;
