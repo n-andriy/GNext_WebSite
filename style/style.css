@@ -1,4 +1,4 @@
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+﻿/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ПЕРЕД СОХРАНЕНИЕМ ФАЙЛА КОДИРУЕМ ЕГО В UTF-8. ИНАЧЕ ПЛОХО ОТОБРАЖАЕТСЯ РУССКИЙ ЯЗЫК 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
@@ -149,16 +149,6 @@ img.displayed {
 	height: 381px;
 }
 
-#frame {
-	position: absolute;
-	/*z-index:0;*/
-	width: 514px;
-	height: 379px;
-	border: 1px solid #363636;
-	/*top:-3px;*/
-	/*left:-80px;*/
-}
-
 .slides_container {
 	width: 490px;
 	overflow: hidden;
@@ -166,18 +156,15 @@ img.displayed {
 	display: none;
 	padding-top: 0px;
 	padding-left: 8px;
+	top: 15px;
+	left: 4px;
 }
 
-.slides_container a {
+.slides_container img {
 	width: 490px;
 	height: 353px;
 	display: block;
 }
-
-.slides_container a img {
-	display: block;
-}
-
 
 #photoGallery {
 	width: 514px;
@@ -185,18 +172,10 @@ img.displayed {
 	position: relative;
 }
 
-#slides {
-	position: absolute;
-	top: 15px;
-	left: 4px;
-	/*z-index:100;*/
-}
-
 .pagination {
-	/*margin:6px auto 0;*/
 	width: 100px;
 	margin-left: 457px;
-	margin-top: 22px;
+	margin-top: 35px;
 }
 
 .pagination li {
@@ -218,24 +197,6 @@ img.displayed {
 
 .pagination li.current a {
 	background-position:0 -12px;
-}
-
-#slides .next,#slides .prev {
-	position: absolute;
-	width: 24px;
-	height: 43px;
-	display: block;
-	z-index: 101;
-}
-
-#slides .next {
-	left: 760px;
-	top: 350px;
-}
-
-#slides .prev {
-	left: 222px;
-	top: 350px;
 }
 
 /* CSS ������ ���� - �����*/
