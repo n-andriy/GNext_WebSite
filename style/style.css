@@ -376,6 +376,21 @@ img.displayed {
 	height: 2px;
 }
 
+.price {
+	border:1px solid red;
+	height:35px;
+	width:100px;
+	padding-top:15px;
+	text-align:center;
+}
+
+#mainCalculator {
+	color:#fff;
+	padding-top:200px;
+	padding-left:250px;
+}
+
+
 /* ФУ-ФУ-ФУ!!! =) ФУТЕР */
 
 .footer-bg {
