@@ -1,0 +1,164 @@
+﻿<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Веб-студия "G-next"</title>
+	<meta http-equiv="keywords" lang="ru" content="дизайн, веб-дизайн, верстка, портфолио, графический дизайн, логотипы, дизайнер, веб-студия">
+	<meta name="keywords" lang="ru" content="дизайн, веб-дизайн, верстка, портфолио, графический дизайн, логотипы, дизайнер, веб-студия">
+	<meta name="copyright" content="© g-next - 2012">
+	<meta name="author" content="G-next">
+	<meta name="author-corporate" content="G-next">
+	<meta name="email" content="g-next@meta.ua">
+	
+	<script type="text/javascript" src="scripts/jquery1.7.2.js"></script>
+	<script type="text/javascript" src="scripts/calc.js"></script>
+	<link rel="stylesheet" href="style/style.css" type="text/css" media="screen, projection">
+	<!--[if lte IE 6]><link rel="stylesheet" href="style/style_ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="hideAllDivs()">
+
+<!-- ОБЩИЙ БЛОК -->
+
+<div id="wrapper">
+
+<!-- ШАПКА -->
+
+<div id="header">
+
+<a href="index.html" title="На главную">
+<div class="logo-main-menu" style="position: absolute; left: 50%; top: 3%; margin-left: -420px;"></div>
+</a>
+
+<div class="content select-free opacity" style="position: absolute; left: 50%; margin-left: -490px;"></div>
+<div class="content-texture select-free opacity" style="position: absolute; left: 50%; margin-left: -490px;"></div>
+
+<div id="menu" style="position: absolute; left: 50%; top: 3%; margin-left: -146px;">
+	
+		<ul id="MainMenu">
+			<li class="portfolio"><a href="portfolio.html">Портфолио</a></li>
+			<li class="services"><a href="services.html">Услуги</a></li>
+			<li class="contact"><a class="selected" href="contact.html">Контакты</a></li>
+			<li class="main"><a href="index.html">Главная</a></li>
+			<li class="localization"><a href="#">Локализация</a></li>
+		</ul>
+</div>
+
+</div>
+
+<!-- КОНТЕНТ -->
+
+<div id="content">
+
+<div id="mainCalculator">
+
+<h1>Калькулятор стоимости</h1><br/>
+<div class="typeOfWork">Вид работы:</div></br>
+<input type="radio" id="design" onclick="showItems(this)">Дизайн
+<input type="radio" id="designVer" onclick="showItems(this)">Дизайн сайта + верстка
+<input type="radio" id="siteKey" onclick="showItems(this)">Сайт "под ключ"
+
+<br/><br/>
+
+<!-- PART 1 -->
+
+<div id="design_banner">
+	<input type="checkbox" id="bannerDesign" onclick="Calculate('fixedBannerPrice','bannerDesign',0)">Дизайн баннера 
+	<input autocomplete="off" type="text" id="amountBanner" onblur="Calculate('fixedBannerPrice','bannerDesign',1)" value="" name="" size="10"/> шт. &nbsp;—&nbsp; <b><span id="fixedBannerPrice">500</span></b> грн./шт.<br/>
+	<input type="checkbox" id="firmStyleChkBox" onclick="Calculate('firmStylePrice','firmStyleChkBox',0)">Разработка фирменного стиля &nbsp;—&nbsp; <b><span id="firmStylePrice">2500</span></b> грн.
+</div>
+
+<!-- PART 2 -->
+
+<div id="designVer_mainDesign">
+	<input type="checkbox" id="mainDesign" onclick="Calculate('mainDesignPrice','mainDesign',0)">Дизайн главной страницы &nbsp;—&nbsp; <b><span id="mainDesignPrice">2000</span></b> грн.
+</div>
+
+<div id="designVer_elDesign">
+	<input type="checkbox" id="elDesign" onclick="Calculate('elDesignPrice','elDesign',0)">Дизайн элементов интерфейса &nbsp;—&nbsp; <b><span id="elDesignPrice">1800</span></b> грн.
+</div>
+
+<div id="designVer_mainLayout">
+	<input type="checkbox" id="mainLayout" onclick="Calculate('mainLayoutPrice','mainLayout',0)">Верстка главной страницы &nbsp;—&nbsp; <b><span id="mainLayoutPrice">2000</span></b> грн.
+</div>
+
+<div id="designVer_otherLayout">
+	<input type="checkbox" id='otherPagesLayout' onclick="Calculate('fixedLayoutPrice','otherPagesLayout',0)">Верстка других страниц
+	<input autocomplete="off" id="amountOtherLayout" type="text" onblur="Calculate('fixedLayoutPrice','otherPagesLayout',1)" value="" name="" size="10"/> шт. &nbsp;—&nbsp; <b><span id="fixedLayoutPrice">500</span></b> грн./шт.
+</div>
+
+<!-- PART 3 -->
+<div id="siteKey_cms">
+	<input type="checkbox" id="siteKeyCms" onclick="Calculate('cmsPrice','siteKeyCms',0)">Установка и конфигурация системы управления сайтом (CMS) &nbsp;—&nbsp; <b><span id="cmsPrice">3800</span></b> грн.
+</div>
+
+<div id="siteKey_search">
+	<input type="checkbox" id="siteKeySearch" onclick="Calculate('searchPrice','siteKeySearch',0)">Поиск по сайту &nbsp;—&nbsp; <b><span id="searchPrice">1800</span></b> грн.
+</div>
+
+<div id="siteKey_photoGallery">
+	<input type="checkbox" id="siteKeyPhotoGal" onclick="Calculate('photoGalleryPrice','siteKeyPhotoGal',0)">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
+</div>
+
+<div id="siteKey_videoGallery">
+	<input type="checkbox" id="siteKeyVideoGal" onclick="Calculate('videoGalleryPrice','siteKeyVideoGal',0)">Видеогалерея &nbsp;—&nbsp; <b><span id="videoGalleryPrice">2200</span></b> грн.
+</div>
+
+<div id="siteKey_faq">
+	<input type="checkbox" id="siteKeyFaq" onclick="Calculate('faqPrice','siteKeyFaq',0)">Система вопросов и ответов (FAQ) &nbsp;—&nbsp; <b><span id="faqPrice">2000</span></b> грн.
+</div>
+
+<div id="siteKey_comments">
+	<input type="checkbox" id="siteKeyComments" onclick="Calculate('commentsPrice','siteKeyComments',0)">Система комментариев &nbsp;—&nbsp; <b><span id="commentsPrice">1700</span></b> грн.
+</div>
+
+<div id="siteKey_votes">
+	<input type="checkbox" id="siteKeyVotes" onclick="Calculate('votesPrice','siteKeyVotes',0)">Голосование &nbsp;—&nbsp; <b><span id="votesPrice">1000</span></b> грн.
+</div>
+
+<div id="siteKey_estore">
+	<input type="checkbox" id="siteKeyEstore" onclick="Calculate('eStorePrice','siteKeyEstore',0)">"Интернет-магазин" &nbsp;—&nbsp; <b><span id="eStorePrice">8000</b> грн.
+</div>
+
+<div id="siteKey_registration">
+	<input type="checkbox" id="siteKeyRegistration" onclick="Calculate('RegPrice','siteKeyRegistration',0)">Регистрация пользователей &nbsp;—&nbsp; <b><span id="RegPrice">1800</span></b> грн.
+</div>
+
+<div id="totalSum">
+	Итого:
+	<div class="price" id="totalPrice"><span id="priceValue">0</span> грн.</div>
+</div>
+
+<div>
+<input type="submit" value="Сброс" onclick="resetForm()"/>
+</div>
+
+<div>
+<input type="submit" value="Оформить заказ" onclick="resetForm()"/>
+</div>
+
+</div>
+
+</div>
+
+<!-- ПОДВАЛ -->
+
+<div id="footer">
+
+<div class="MenuFooter" style="position:absolute; left:50%; top: 1384px; margin-left: -440px;">
+<a href="index.html" class="MenuFooter">главная</a> | <a href="portfolio.html" class="MenuFooter">портфолио</a> | <a href="services.html" class="MenuFooter">услуги</a> | <a href="contact.html" class="MenuFooter">контакты</a></div>
+
+<div class="copyrights" style="position:absolute; left:50%; top: 1384px; margin-left: 100px;">
+&copy; Web Studio G-next 2012. All rights reserved.
+</div>
+
+<div class="footer-bg select-free opacity" style="position: absolute; left: 50%; top: 50%; margin-top: 1040px; margin-left: -490px;"></div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
