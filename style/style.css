@@ -397,36 +397,7 @@ ul#Social-icon-mail{margin: 0; padding: 0; list-style: none; clear: both;}
 				#Social-icon-mail li.social-icon-mail{width: 110px; height: 107px;}
 				#Social-icon-mail li.social-icon-mail a{background-position: 0px -106px;}
 				#Social-icon-mail li.social-icon-mail a:hover{background-position: 0px 0px;}
-							
-
-/* Вариант №2 */
-							
-#social2{width: 242px; height: 117px; overflow: hidden;} /* Положение меню */
-
-	ul#SocialIcon2{margin: 0; padding: 0; list-style: none; clear: both;}
-		#SocialIcon2 li{overflow: hidden; text-indent: -9999px; display: inline; float: left; margin-right: 0px;}
-			#SocialIcon2 li a{background: url(../images/social-icon2.png) no-repeat; width: 100%; height: 100%; display: block;}
-			
-			/* Кнопка Твиттер */
-			#SocialIcon2 li.twit2{width: 60px; height: 64px;}
-				#SocialIcon2 li.twit2 a{background-position: 0px 6px;}
-				#SocialIcon2 li.twit2 a:hover{background-position: 0px -58px;}
-							
-			/* Кнопка Контакт */
-			#SocialIcon2 li.vk2{width: 60px; height: 64px;}
-				#SocialIcon2 li.vk2 a{background-position: -61px 6px;}
-				#SocialIcon2 li.vk2 a:hover{background-position: -61px -58px;}
-								
-			/* Кнопка Фейсбук */
-			#SocialIcon2 li.face2{width: 60px; height: 64px;}
-				#SocialIcon2 li.face2 a{background-position: -122px 6px;}
-				#SocialIcon2 li.face2 a:hover{background-position: -122px -58px;}
-							
-			/* Кнопка Почта */
-			#SocialIcon2 li.mail2{width: 60px; height: 64px;}
-				#SocialIcon2 li.mail2 a{background-position: -182px 6px;}
-				#SocialIcon2 li.mail2 a:hover{background-position: -182px -58px;}
-							
+										
 /* CSS Спрайт Соц. сети - Конец*/
 
 .neon-line {
