@@ -12,23 +12,24 @@ html {
 body {
 	font: 12px/18px Verdana, Arial, Helvetica, sans-serif;
 	background-color: #000;
-	background-image: url(../images/bg.jpg); /* Путь к фоновому рисунку */
+	background-image: url(../images/bg.jpg); /* РџСѓС‚СЊ Рє С„РѕРЅРѕРІРѕРјСѓ СЂРёСЃСѓРЅРєСѓ */
     background-attachment: fixed;
 	background-position: center;
 }
 a{
-    color: #2193d8; /* Цвет обычной ссылки */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: #2193d8; /* Р¦РІРµС‚ РѕР±С‹С‡РЅРѕР№ СЃСЃС‹Р»РєРё */
+    text-decoration: none; /* РЈР±РёСЂР°РµРј РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ Сѓ СЃСЃС‹Р»РѕРє */
 }
 
 a:visited {
-    color: #2193d8; /* Цвет посещенной ссылки */
+    color: #2193d8; /* Р¦РІРµС‚ РїРѕСЃРµС‰РµРЅРЅРѕР№ СЃСЃС‹Р»РєРё */
 } 
 
 a:hover {
-    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
-	text-decoration: underline;
+    color: #fff; /* Р¦РІРµС‚ СЃСЃС‹Р»РєРё РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° РЅРµРµ РєСѓСЂСЃРѕСЂР° РјС‹С€Рё */
+	text-decoration: none;
 }
+
 p {
 	margin: 0 0 15px;
 	color: #2193d8;
@@ -87,58 +88,64 @@ img.displayed {
 	background-image: url(../images/logo.png);
 }
 
-/* Прозрачность */
+/* РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ */
 
 .opacity {
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* IE 5.5+*/
-	-moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+	-moz-opacity: 0.5; /* Mozilla 1.6 Рё РЅРёР¶Рµ */
 	-khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
 	opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9 */
 }
 
-/* Прозрачность - Конец */
+.opacity-off {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* IE 5.5+*/
+	-moz-opacity: 1; /* Mozilla 1.6 Рё РЅРёР¶Рµ */
+	-khtml-opacity: 1; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 1; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9 */
+}
 
-/* CSS Спрайт Меню */
+/* РџСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ - РљРѕРЅРµС† */
 
-#menu{width: 500px; overflow: hidden;} /* Положение меню */
+/* CSS РЎРїСЂР°Р№С‚ РњРµРЅСЋ */
+
+#menu{width: 500px; overflow: hidden;} /* РџРѕР»РѕР¶РµРЅРёРµ РјРµРЅСЋ */
 
 	ul#MainMenu{margin: 0; padding: 0; list-style: none; clear: both;}
 		#MainMenu li{overflow: hidden; text-indent: -9999px; display: inline; float: left; margin-right: 0px;}
 			#MainMenu li a{background: url(../images/Menu_RU.png) no-repeat; width: 100%; height: 100%; display: block;}
 			
-			/* Кнопка Портфолио */
+			/* РљРЅРѕРїРєР° РџРѕСЂС‚С„РѕР»РёРѕ */
 			#MainMenu li.portfolio{width: 139px; height: 139px;}
 				#MainMenu li.portfolio a{background-position: 0px 0px;}
 				#MainMenu li.portfolio a:hover{background-position: 0px -140px;}
 				#MainMenu li.portfolio a.selected{background-position: 0px -280px;}
 			
-			/* Кнопка Контакты */
+			/* РљРЅРѕРїРєР° РЈСЃР»СѓРіРё */
 			#MainMenu li.services{width: 121px; height: 131px;}
 				#MainMenu li.services a{background-position: -139px 0px;}
 				#MainMenu li.services a:hover{background-position: -139px -140px;}
 				#MainMenu li.services a.selected{background-position: -139px -280px;}
 				
-			/* Кнопка Услуги */
+			/* РљРЅРѕРїРєР° РљРѕРЅС‚Р°РєС‚С‹ */
 			#MainMenu li.contact{width: 106px; height: 126px;}
 				#MainMenu li.contact a{background-position: -260px 0px;}
 				#MainMenu li.contact a:hover{background-position: -260px -140px;}
 				#MainMenu li.contact a.selected{background-position: -260px -280px;}
 			
-			/* Кнопка Главная */
+			/* РљРЅРѕРїРєР° Р“Р»Р°РІРЅР°СЏ */
 			#MainMenu li.main{width: 76px; height: 114px;}
 				#MainMenu li.main a{background-position: -366px 0px;}
 				#MainMenu li.main a:hover{background-position: -366px -140px;}
 				#MainMenu li.main a.selected{background-position: -366px -280px;}
 			
-			/* Кнопка Локализация */
+			/* РљРЅРѕРїРєР° Р›РѕРєР°Р»РёР·Р°С†РёСЏ */
 			#MainMenu li.localization{width: 58px; height: 107px;}
 				#MainMenu li.localization a{background-position: -442px 0px;}
 				#MainMenu li.localization a:hover{background-position: -442px -140px;}
 				
-/* CSS Спрайт Меню - Конец*/
+/* CSS РЎРїСЂР°Р№С‚ РњРµРЅСЋ - РљРѕРЅРµС†*/
 
-
-/* Галлерея */
+/* Р“Р°Р»Р»РµСЂРµСЏ */
 
 .gallery-content {
 	position: absolute;
@@ -199,9 +206,9 @@ img.displayed {
 	background-position:0 -12px;
 }
 
-/* CSS Спрайт Меню - Конец*/
+/* CSS РЎРїСЂР°Р№С‚ РњРµРЅСЋ - РљРѕРЅРµС†*/
 
-/* Информационные разделы */
+/* РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ СЂР°Р·РґРµР»С‹ */
 
 .inform-head1 {
 	position: absolute;
@@ -259,12 +266,12 @@ img.displayed {
 	width: 315px;
 	height: 176px;
 	margin: 0 0 15px;
-	color: #2193d8;
+	color: #fff;
 	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
 	line-height: normal;
 }
 
-/* Последниые работы */
+/* РџРѕСЃР»РµРґРЅРёС‹Рµ СЂР°Р±РѕС‚С‹ */
 
 .last-work-content {
 	position: absolute;
@@ -309,7 +316,7 @@ img.displayed {
 	text-decoration: underline;
 }
 
-/* CSS Спрайт Калькулятор */
+/* CSS РЎРїСЂР°Р№С‚ РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ */
 
 	ul#Calc-batton{margin: 0; padding: 0; list-style: none; clear: both;}
 		#Calc-batton li{overflow: hidden; text-indent: -9999px; display: inline; float: left; margin-right: 0px;}
@@ -319,7 +326,7 @@ img.displayed {
 				#Calc-batton li.calc-batton a{background-position: 0px 0px;}
 				#Calc-batton li.calc-batton a:hover{background-position: 0px -51px;}
 							
-/* CSS Спрайт Калькулятор - Конец*/
+/* CSS РЎРїСЂР°Р№С‚ РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ - РљРѕРЅРµС†*/
 
 .neon-line {
 	position: absolute;
@@ -335,7 +342,7 @@ img.displayed {
 	height: 2px;
 }
 
-/* ФУ-ФУ-ФУ!!! =) ФУТЕР */
+/* Р¤РЈ-Р¤РЈ-Р¤РЈ!!! =) Р¤РЈРўР•Р  */
 
 .footer-bg {
 	position: absolute;
