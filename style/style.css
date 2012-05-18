@@ -145,7 +145,7 @@ img.displayed {
 	color: #2193d8;
 	background: #1d1d1d;
 	border: 1px solid #363636;
-	width: 516px;
+	width: 514px;
 	height: 381px;
 }
 
@@ -165,7 +165,7 @@ img.displayed {
 	position: relative;
 	display: none;
 	padding-top: 0px;
-	padding-left: 9px;
+	padding-left: 8px;
 }
 
 .slides_container a {
@@ -180,7 +180,7 @@ img.displayed {
 
 
 #photoGallery {
-	width: 516px;
+	width: 514px;
 	height: 381px;
 	position: relative;
 }
@@ -195,7 +195,7 @@ img.displayed {
 .pagination {
 	/*margin:6px auto 0;*/
 	width: 100px;
-	margin-left: 458px;
+	margin-left: 457px;
 	margin-top: 22px;
 }
 
