@@ -19,7 +19,13 @@
 	
 	<script>
 		$(function(){
-			$("#slides").slides();
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/gallery/loading.gif',
+				play: 5000,
+				pause: 2000,
+				hoverPause: true
+			});
 		});
 	</script>
 	
@@ -58,7 +64,30 @@
 <!-- КОНТЕНТ -->
 
 <div id="content">
-
+	<div id="photoGallery">
+		<div id="slides">
+			<div class="slides_container">
+				<a href="#" title="photo1"><img src="images/gallery/slide-1.jpg" width="490" height="400" alt="Slide 1"></a>
+				<a href="#" title="photo2"><img src="images/gallery/slide-2.jpg" width="490" height="400" alt="Slide 2"></a>
+				<a href="#" title="photo3"><img src="images/gallery/slide-3.jpg" width="490" height="400" alt="Slide 3"></a>
+				<a href="#" title="photo4"><img src="images/gallery/slide-4.jpg" width="490" height="400" alt="Slide 4"></a>
+			</div>
+			
+			<!-- Кнопки пока убрал (некрасиво смотрятся) -->
+			
+			<!--<a href="#" class="prev"><img src="images/gallery/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+			<a href="#" class="next"><img src="images/gallery/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+			
+		</div>
+		<img src="images/gallery/gallery_frame.png" width="514" height="386" alt="Frame" id="frame">
+	</div>
+	
+	<!-- Блок "Перспектива" -->
+	
+	<div id="perspective">
+		<img src="images/pers_border.png" alt="perspective">
+	</div>
+	
 <!-- Галлерея -->
 
 <div class="gallery-content opacity" style="position: absolute; left: 50%; top: 50%; margin-top: -150px; margin-left: -440px; "></div>
