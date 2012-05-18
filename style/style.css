@@ -49,26 +49,38 @@ img.displayed {
 
 .MenuFooter {
 	color: #2193d8;
-	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
 }
 
 .copyrights {
 	color: #2193d8;
-	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
 }
 
 .content {
 	position: absolute;
 	background: #000;
 	width: 980px;
-	height: 100%;
+	height: 1420px;
+	background-image: url(../images/texture-content2.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.content-texture {
+	position: absolute;
+	width: 980px;
+	height: 1420px;
+	background-image: url(../images/texture-content.png);
+	background-repeat: no-repeat;
+	background-position: right top;
 }
 
 .logo-main-menu {
 	position: absolute;
 	width: 248px;
 	height: 139px;
-	background-image: url(../images/logo.png); 
+	background-image: url(../images/logo.png);
 }
 
 /* Прозрачность */
@@ -120,3 +132,160 @@ img.displayed {
 				#MainMenu li.localization a:hover{background-position: -442px -140px;}
 				
 /* CSS Спрайт Меню - Конец*/
+
+/* Галлерея */
+
+.gallery-content {
+	position: absolute;
+	color: #2193d8;
+	background: #1d1d1d;
+	border: 1px solid #363636;
+	width: 514px;
+	height: 381px;
+}
+
+/* Информационные разделы */
+
+.inform-head1 {
+	position: absolute;
+	color: #2193d8;
+	background: url(../images/inform-head.png) no-repeat;
+	background-position: 0px 0px;
+	width: 516px;
+	height: 38px;
+}
+
+.inform-head2 {
+	position: absolute;
+	color: #2193d8;
+	background: url(../images/inform-head.png) no-repeat;
+	background-position: 0px -38px;
+	width: 516px;
+	height: 38px;
+}
+
+.inform-head3 {
+	position: absolute;
+	color: #2193d8;
+	background: url(../images/inform-head.png) no-repeat;
+	background-position: 0px -76px;
+	width: 516px;
+	height: 38px;
+}
+
+.inform-content {
+	position: absolute;
+	color: #2193d8;
+	background: #1d1d1d;
+	border: 1px solid #363636;
+	width: 514px;
+	height: 200px;
+}
+
+.inform-img {
+	position: absolute;
+	background: url(../images/inform-img.jpg) no-repeat;
+	width: 164px;
+	height: 164px;
+}
+
+.inform-img-bg {
+	position: absolute;
+	background: #2b2b2b;
+	border: 1px solid #363636;
+	width: 176px;
+	height: 176px;
+}
+
+.inform-text {
+	position: absolute;
+	width: 315px;
+	height: 176px;
+	margin: 0 0 15px;
+	color: #2193d8;
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
+	line-height: normal;
+}
+
+/* Последниые работы */
+
+.last-work-content {
+	position: absolute;
+	color: #2193d8;
+	background: #1d1d1d;
+	border: 1px solid #363636;
+	width: 294px;
+	height: 739px;
+}
+
+.last-work-head {
+	position: absolute;
+	color: #2193d8;
+	background: url(../images/last-work-head.png) no-repeat;
+	width: 296px;
+	height: 51px;
+}
+
+.last-work-img {
+	position: absolute;
+	background: url(../images/last-work-img.png) no-repeat;
+	width: 276px;
+	height: 85px;
+}
+
+.last-work-img-bg {
+	position: absolute;
+	background: #2b2b2b;
+	border: 1px solid #363636;
+	width: 280px;
+	height: 90px;
+}
+
+.last-work-text {
+	position: absolute;
+	width: 249px;
+	height: 30px;
+	margin: 0 0 15px;
+	color: #2193d8;
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
+	line-height: normal;
+	text-decoration: underline;
+}
+
+/* CSS Спрайт Калькулятор */
+
+	ul#Calc-batton{margin: 0; padding: 0; list-style: none; clear: both;}
+		#Calc-batton li{overflow: hidden; text-indent: -9999px; display: inline; float: left; margin-right: 0px;}
+			#Calc-batton li a{background: url(../images/calc.png) no-repeat; width: 100%; height: 100%; display: block;}
+			
+				#Calc-batton li.calc-batton{width: 296px; height: 51px;}
+				#Calc-batton li.calc-batton a{background-position: 0px 0px;}
+				#Calc-batton li.calc-batton a:hover{background-position: 0px -51px;}
+							
+/* CSS Спрайт Калькулятор - Конец*/
+
+.neon-line {
+	position: absolute;
+	background: url(../images/neon-line.png) no-repeat;
+	width: 247px;
+	height: 2px;
+}
+
+.neon-line-long {
+	position: absolute;
+	background: url(../images/neon-line-long.png) no-repeat;
+	width: 515px;
+	height: 2px;
+}
+
+/* ФУ-ФУ-ФУ!!! =) ФУТЕР */
+
+.footer-bg {
+	position: absolute;
+	background: #093c5a;
+	width: 980px;
+	height: 60px;
+	background-image: url(../images/footer-line.png);
+	background-repeat: repeat-x;
+	background-position: top;
+}
