@@ -1,8 +1,9 @@
 var ids = new Array('designVer_mainDesign','designVer_elDesign','design_banner','designVer_mainLayout','designVer_otherLayout',
-'siteKey_cms','siteKey_search','siteKey_photoGallery','siteKey_videoGallery','siteKey_faq','siteKey_comments','siteKey_votes','siteKey_estore',
-'siteKey_registration');
+'siteKey_type','personalElements','eStoreElements','visitCardElements');
 
 var radioBtn = new Array('design','designVer','siteKey');
+var subBtns = new Array('siteKey_personal','siteKey_visitCard','siteKey_eStore');
+
 
 function hideAllDivs()
 {
@@ -39,56 +40,57 @@ function showElementDivs(type)
 	}
 }
 
-function Calculate(addedPrice, controlBox, mode)
+function showSubItems(element)
 {
-	var price = parseInt(document.getElementById("priceValue").innerText);
-	
-	// Поменялся фокус
-	if (mode == 1)
+	for (var btn in subBtns)
 	{
-		
+		if (subBtns[btn] != element.id)
+			document.getElementById(subBtns[btn]).checked = false;
 	}
 	
-	if (controlBox == 'bannerDesign')
+	showElementSubDivs(element.id);
+}
+
+function showElementSubDivs(elementId)
+{
+	hideAllSubDivs();
+	if (elementId == 'siteKey_personal')
 	{
-		if (document.getElementById(controlBox).checked)
-		{
-			if (document.getElementById("amountBanner").value == '')
-			{
-				return;
-			}
-		
-			price += parseInt(document.getElementById("amountBanner").value) * parseInt(document.getElementById(addedPrice).innerText);
-			
-		}
-		else
-		{
-			if (mode != 0)
-			{
-				return;
-			}
-			
-			price -= parseInt(document.getElementById("amountBanner").value) * parseInt(document.getElementById(addedPrice).innerText);
-		}
-		
-		document.getElementById("priceValue").innerText = price;
+		document.getElementById('personalElements').style.display = 'block';
 		return;
 	}
 	
-	if (document.getElementById(controlBox).checked)
+	if (elementId == 'siteKey_eStore')
 	{
-		price += parseInt(document.getElementById(addedPrice).innerText);
+		document.getElementById('eStoreElements').style.display = 'block';
 	}
-	else
-	{
-		price -= parseInt(document.getElementById(addedPrice).innerText);
-	}
-	
-	document.getElementById("priceValue").innerText = price;
 }
 
+function hideAllSubDivs()
+{
+	var subdivs = new Array('siteKey_personal','siteKey_visitCard','siteKey_eStore');
+	
+	for (var item in subdivs)
+	{
+		document.getElementById(subdivs[item]).style.display = 'none';
+	}
+}
+
+/*function Calculate(addedPrice, controlBox, mode)
+{
+	// var price = parseInt(document.getElementById("priceValue").innerText);
+	
+	//document.getElementById(controlBox).checked)
+		
+	//document.getElementById("amountBanner").value == ''
+			//		price += parseInt(document.getElementById("amountBanner").value) * parseInt(document.getElementById(addedPrice).innerText);
+			
+		//document.getElementById("priceValue").innerText = price;
+	
+}*/
+
 // Нажата кнопка "Сброс"
-function resetForm()
+/*function resetForm()
 {
 	var radioBtns = new Array('mainDesign','elDesign','mainLayout','otherPagesLayout','siteKeyCms','siteKeySearch','siteKeyPhotoGal','siteKeyVideoGal',
 								'siteKeyFaq','siteKeyComments','siteKeyVotes','siteKeyEstore','siteKeyRegistration','firmStyleChkBox','bannerDesign');
@@ -101,4 +103,4 @@ function resetForm()
 	document.getElementById("priceValue").innerText = '0';
 	document.getElementById("amountBanner").value = '';
 	document.getElementById("amountOtherLayout").value = '';
-}
+}*/

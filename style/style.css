@@ -440,6 +440,15 @@ ul#Social-icon-mail{margin: 0; padding: 0; list-style: none; clear: both;}
 	padding-left:250px;
 }
 
+/* Форма обратной связи */
+
+#feedbackForm {
+	position:absolute;
+	margin-top:250px;
+	margin-left:250px;
+	color:#2193d8;
+}
+
 
 /* ФУ-ФУ-ФУ!!! =) ФУТЕР */
 

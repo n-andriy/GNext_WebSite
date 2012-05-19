@@ -89,18 +89,47 @@
 </div>
 
 <!-- PART 3 -->
-<div id="siteKey_cms">
-	<input type="checkbox" id="siteKeyCms" onclick="Calculate('cmsPrice','siteKeyCms',0)">Установка и конфигурация системы управления сайтом (CMS) &nbsp;—&nbsp; <b><span id="cmsPrice">3800</span></b> грн.
+
+<div id="siteKey_type">
+	<p>Основа</p>
+	<input type="radio" id="siteKey_personal" onclick="showSubItems(this)">Персональная страница
+	<input type="radio" id="siteKey_visitCard" onclick="showSubItems(this)">Сайт-визитка
+	<input type="radio" id="siteKey_eStore" onclick="showSubItems(this)">Интернет-магазин
 </div>
 
-<div id="siteKey_search">
-	<input type="checkbox" id="siteKeySearch" onclick="Calculate('searchPrice','siteKeySearch',0)">Поиск по сайту &nbsp;—&nbsp; <b><span id="searchPrice">1800</span></b> грн.
+<div id="personalElements">
+	<div id="photoGallery">
+		<input type="checkbox" id="PhotoGal" onclick="Calculate()">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
+	</div>
 </div>
 
-<div id="siteKey_photoGallery">
-	<input type="checkbox" id="siteKeyPhotoGal" onclick="Calculate('photoGalleryPrice','siteKeyPhotoGal',0)">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
+<div id="visitCardElements">
+	
 </div>
 
+<div id="eStoreElements">
+	<div id="cms">
+		<input type="checkbox" id="siteKeyCms" onclick="">Установка и конфигурация системы управления сайтом (CMS) &nbsp;—&nbsp; <b><span id="cmsPrice">3800</span></b> грн.
+	</div>
+	
+	<div id="photoGallery">
+		<input type="checkbox" id="PhotoGal" onclick="">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
+	</div>
+	
+	<div id="registration">
+		<input type="checkbox" id="siteKeyRegistration" onclick="">Регистрация пользователей &nbsp;—&nbsp; <b><span id="RegPrice">1800</span></b> грн.
+	</div>
+	
+	<div id="catalog">
+		<input type="checkbox" id="siteKeyRegistration" onclick="">Каталог продукции &nbsp;—&nbsp; <b><span id="RegPrice">1800</span></b> грн.
+	</div>
+	
+	<div id="filter">
+		<input type="checkbox" id="siteKeySearch" onclick="">Фильтр товаров&nbsp;—&nbsp; <b><span id="searchPrice">1800</span></b> грн.
+	</div>
+</div>
+
+<!--
 <div id="siteKey_videoGallery">
 	<input type="checkbox" id="siteKeyVideoGal" onclick="Calculate('videoGalleryPrice','siteKeyVideoGal',0)">Видеогалерея &nbsp;—&nbsp; <b><span id="videoGalleryPrice">2200</span></b> грн.
 </div>
@@ -117,13 +146,7 @@
 	<input type="checkbox" id="siteKeyVotes" onclick="Calculate('votesPrice','siteKeyVotes',0)">Голосование &nbsp;—&nbsp; <b><span id="votesPrice">1000</span></b> грн.
 </div>
 
-<div id="siteKey_estore">
-	<input type="checkbox" id="siteKeyEstore" onclick="Calculate('eStorePrice','siteKeyEstore',0)">"Интернет-магазин" &nbsp;—&nbsp; <b><span id="eStorePrice">8000</b> грн.
-</div>
-
-<div id="siteKey_registration">
-	<input type="checkbox" id="siteKeyRegistration" onclick="Calculate('RegPrice','siteKeyRegistration',0)">Регистрация пользователей &nbsp;—&nbsp; <b><span id="RegPrice">1800</span></b> грн.
-</div>
+-->
 
 <div id="totalSum">
 	Итого:
