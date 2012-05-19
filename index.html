@@ -16,6 +16,7 @@
 
 	<script type="text/javascript" src="scripts/jquery1.7.2.js"></script>
 	<script type="text/javascript" src="scripts/slides.js"></script>
+	<!--<script type="text/javascript" src="scripts/menu-opacity.js"></script>-->
 	
 	<script>
 		$(function(){
@@ -27,6 +28,29 @@
 				hoverPause: true
 			});
 		});
+	</script>
+	
+	<script>
+	$(function() {
+		// set opacity to nill on page load
+		$("ul#MainMenu span").css("opacity","0");
+		// on mouse over
+		$("ul#MainMenu span").hover(function () {
+			if(!$(this).parent().hasClass("selected")){
+				// animate opacity to full
+				$(this).stop().animate({
+					opacity: 1
+				}, 'fast');
+			}
+		},
+		// on mouse out
+		function () {
+			// animate opacity to nill
+			$(this).stop().animate({
+				opacity: 0
+			}, 'slow');
+		});
+	});
 	</script>
 	
 </head>
@@ -51,11 +75,11 @@
 <div id="menu" style="position: absolute; left: 50%; top: 3%; margin-left: -146px;">
 	
 		<ul id="MainMenu">
-			<li class="portfolio"><a href="portfolio.html">Портфолио</a></li>
-			<li class="services"><a href="services.html">Услуги</a></li>
-			<li class="contact"><a href="contact.html">Контакты</a></li>
-			<li class="main"><a class="selected" href="index.html">Главная</a></li>
-			<li class="localization"><a href="#">Локализация</a></li>
+			<li class="portfolio"><a href="portfolio.html">Портфолио<span></span></a></li>
+			<li class="services"><a href="services.html">Услуги<span></span></a></li>
+			<li class="contact"><a href="contact.html">Контакты<span></span></a></li>
+			<li class="main"><a class="selected" href="index.html">Главная<span></span></a></li>
+			<li class="localization"><a href="#">Локализация<span></span></a></li>
 		</ul>
 </div>
 
