@@ -76,8 +76,50 @@ function hideAllSubDivs()
 	}
 }
 
-/*function Calculate(addedPrice, controlBox, mode)
+function Calculate(addedPrice, controlBox, mode)
 {
+	// Смена фокуса текстбокса, но галочка не выбрана
+	if (mode == 1 && document.getElementById('bannerDesign').checked == false)
+	{
+		return;
+	}
+	
+	// Смена фокуса текстбокса, галочка выбрана
+	if (mode == 1 && document.getElementById('bannerDesign').checked == true)
+	{
+		//var bannerAmount = parseInt(document.getElementById('amountBanner').value);
+		var currentPrice = parseInt(document.getElementById('priceValue').innerText);
+		var fixedPrice = parseInt(document.getElementById(addedPrice).innerText);
+		
+		// Если в текстбоксе уже содержится кол-во и вводится новое
+		if (currentPrice != 0 && document.getElementById('txtBoxValue').value != document.getElementById('amountBanner').value)
+		{
+			currentPrice -= parseInt(document.getElementById('txtBoxValue').value) * fixedPrice;
+		}
+		
+		document.getElementById('txtBoxValue').value = document.getElementById('amountBanner').value;
+				
+		currentPrice += fixedPrice * parseInt(document.getElementById('amountBanner').value);
+		
+		document.getElementById('priceValue').innerText = currentPrice;
+	}
+	
+	/*if (mode == 0)
+	{
+		var currentPrice = parseInt(document.getElementById('priceValue').innerText);
+		if (document.getElementById(controlBox).checked == true)
+		{
+			currentPrice += parseInt(document.getElementById(addedPrice).innerText);			
+		}
+		
+		if (document.getElementById(controlBox).checked == false)
+		{
+			currentPrice -= parseInt(document.getElementById(addedPrice).innerText);
+		}
+		
+		document.getElementById('priceValue').innerText = currentPrice;
+	}*/
+	
 	// var price = parseInt(document.getElementById("priceValue").innerText);
 	
 	//document.getElementById(controlBox).checked)
@@ -87,7 +129,7 @@ function hideAllSubDivs()
 			
 		//document.getElementById("priceValue").innerText = price;
 	
-}*/
+}
 
 // Нажата кнопка "Сброс"
 /*function resetForm()

@@ -55,18 +55,18 @@
 
 <h1 style="color:#fff;">Калькулятор стоимости</h1><br/>
 <div class="typeOfWork">Вид работы:</div></br>
-<input type="radio" id="design" onclick="showItems(this)">Дизайн
-<input type="radio" id="designVer" onclick="showItems(this)">Дизайн сайта + верстка
-<input type="radio" id="siteKey" onclick="showItems(this)">Сайт "под ключ"
+<input type="radio" id="design" onclick="showItems(this)">&nbsp;Дизайн
+<input type="radio" id="designVer" onclick="showItems(this)">&nbsp;Дизайн сайта + верстка
+<input type="radio" id="siteKey" onclick="showItems(this)">&nbsp;Сайт "под ключ"
 
 <br/><br/>
 
 <!-- PART 1 -->
-
+<input type="hidden" value="" id="txtBoxValue">
 <div id="design_banner">
-	<input type="checkbox" id="bannerDesign" onclick="Calculate('fixedBannerPrice','bannerDesign',0)">Дизайн баннера 
-	<input autocomplete="off" type="text" id="amountBanner" onblur="Calculate('fixedBannerPrice','bannerDesign',1)" value="" name="" size="10"/> шт. &nbsp;—&nbsp; <b><span id="fixedBannerPrice">500</span></b> грн./шт.<br/>
-	<input type="checkbox" id="firmStyleChkBox" onclick="Calculate('firmStylePrice','firmStyleChkBox',0)">Разработка фирменного стиля &nbsp;—&nbsp; <b><span id="firmStylePrice">2500</span></b> грн.
+	<input type="checkbox" id="bannerDesign" onclick="">Дизайн баннера 
+	<input autocomplete="off" type="text" id="amountBanner" onblur="Calculate('fixedBannerPrice','amountBanner', 1)" value="" name="" size="10"/> шт. &nbsp;—&nbsp; <b><span id="fixedBannerPrice">500</span></b> грн./шт.<br/>
+	<input type="checkbox" id="firmStyleChkBox" onclick="Calculate('firmStylePrice','firmStyleChkBox', 0)">Разработка фирменного стиля &nbsp;—&nbsp; <b><span id="firmStylePrice">2500</span></b> грн.
 </div>
 
 <!-- PART 2 -->
@@ -92,14 +92,14 @@
 
 <div id="siteKey_type">
 	<p>Основа</p>
-	<input type="radio" id="siteKey_personal" onclick="showSubItems(this)">Персональная страница
-	<input type="radio" id="siteKey_visitCard" onclick="showSubItems(this)">Сайт-визитка
-	<input type="radio" id="siteKey_eStore" onclick="showSubItems(this)">Интернет-магазин
+	<input type="radio" id="siteKey_personal" onclick="">Персональная страница
+	<input type="radio" id="siteKey_visitCard" onclick="">Сайт-визитка
+	<input type="radio" id="siteKey_eStore" onclick="">Интернет-магазин
 </div>
 
 <div id="personalElements">
 	<div id="photoGallery">
-		<input type="checkbox" id="PhotoGal" onclick="Calculate()">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
+		<input type="checkbox" id="PhotoGal" onclick="">Фотогалерея &nbsp;—&nbsp; <b><span id="photoGalleryPrice">2000</span></b> грн.
 	</div>
 </div>
 
